@@ -61,3 +61,24 @@
  .premium-points>div{grid-template-columns:34px 1fr;}
  .premium-points strong{font-size:21px;}
 }
+
+/* Samaun brand alignment + catalogue/packaging refinement */
+header{background:rgba(253,244,231,.96);border-bottom-color:rgba(184,137,69,.20)}
+.brand{background:transparent}
+.brand img{width:196px;height:70px;object-fit:contain;object-position:left center}
+.footer-brand img{background:transparent;padding:0;border-radius:0;object-fit:contain}
+.category-grid{grid-template-columns:repeat(3,1fr)}
+.packaging{padding:95px 0;background:var(--cream);border-top:1px solid rgba(184,137,69,.16)}
+.packaging-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}
+.packaging-copy h2{font-family:"Palatino Linotype",Palatino,Georgia,serif;font-size:clamp(44px,5vw,66px);line-height:1.02;font-weight:500;margin:0 0 20px}
+.packaging-copy h2 em{color:var(--gold);font-style:italic}
+.packaging-copy p{color:var(--muted);font-size:16px;line-height:1.8;max-width:560px}
+.packaging-swatches{display:flex;flex-wrap:wrap;gap:16px;margin-top:28px}
+.packaging-swatches span{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.08em}
+.packaging-swatches i{display:block;width:22px;height:22px;border-radius:50%;border:1px solid rgba(23,61,50,.14)}
+.bag-art{background:rgba(255,253,248,.65);border:1px solid #ddd2bc;border-radius:28px;padding:22px;box-shadow:0 20px 55px rgba(23,61,50,.06)}
+.bag-art img{display:block;width:100%;height:auto}
+@media(max-width:900px){.category-grid{grid-template-columns:repeat(2,1fr)}.packaging-grid{grid-template-columns:1fr;gap:40px}}
+@media(max-width:650px){.brand img{width:150px;height:60px}.category-grid{grid-template-columns:1fr}.packaging{padding:70px 0}}
+/* Footer sits on forest green, so keep the original warm brand tile there for contrast. */
+.footer-brand img{background:#fdf4e7;padding:5px;border-radius:4px}
