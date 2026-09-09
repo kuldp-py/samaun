@@ -13,7 +13,7 @@ async function auth(request, env){
   if(!exp||Date.now()>Number(exp)) return false; const expected=await sign(exp,env.ADMIN_SESSION_SECRET||'change-me'); return sig===expected;
 }
 async function requireAuth(request, env){ if(!(await auth(request,env))) return json({error:'Unauthorized'},401,cors); return null; }
-function imgUrl(key){ return key ? `/api/image/${encodeURIComponent(key)}` : '/placeholder.svg'; }
+function imgUrl(key){ return key ? (key.startsWith('/') ? key : `/api/image/${encodeURIComponent(key)}`) : '/placeholder.svg'; }
 
 export async function onRequest(context){
   const {request,env}=context; if(request.method==='OPTIONS') return withCors(new Response(null,{status:204}));
