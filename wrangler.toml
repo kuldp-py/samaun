@@ -1,3 +1,8 @@
 name = "samaun-store"
 compatibility_date = "2026-09-08"
 pages_build_output_dir = "dist"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "samaun_db"
+database_id = "e8b1c6fa-178f-46f3-8293-c90231bb46f7"
