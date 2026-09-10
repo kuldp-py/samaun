@@ -1,14 +1,15 @@
-Samaun Admin Control Room Navigation Fix
+Samaun User Name + Verified Purchase Review Fix
 
-Replace only:
+Replace ONLY:
   src/main.jsx
-  src/style.css
+  functions/api/[[path]].js
 
-This patch:
-- Adds "Control room" beside "Logged as Admin" in the header.
-- Keeps the header controls aligned on one line.
-- Clicking "Control room" returns to the admin dashboard.
-- Keeps the existing single admin Sign out button.
-- Does not change backend, D1, authentication secrets, or product data.
+Changes:
+- Customer header shows the customer's name instead of "Account".
+- Review form only appears with products from PAID customer orders.
+- Backend independently blocks review submissions unless the customer has a paid order containing that product.
+- PBKDF2 compatibility fix (100000 iterations) is preserved.
+- Existing Admin UI and styling are preserved.
 
-Deploy with GitHub Desktop by committing and pushing to main.
+Deploy both files together via GitHub Desktop.
+Do not change D1 schema or Cloudflare secrets.
