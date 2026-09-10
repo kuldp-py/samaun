@@ -62,23 +62,23 @@
  .premium-points strong{font-size:21px;}
 }
 
-/* Samaun brand alignment + catalogue/packaging refinement */
-header{background:rgba(253,244,231,.96);border-bottom-color:rgba(184,137,69,.20)}
-.brand{background:transparent}
-.brand img{width:196px;height:70px;object-fit:contain;object-position:left center}
-.footer-brand img{background:transparent;padding:0;border-radius:0;object-fit:contain}
-.category-grid{grid-template-columns:repeat(3,1fr)}
-.packaging{padding:95px 0;background:var(--cream);border-top:1px solid rgba(184,137,69,.16)}
-.packaging-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}
-.packaging-copy h2{font-family:"Palatino Linotype",Palatino,Georgia,serif;font-size:clamp(44px,5vw,66px);line-height:1.02;font-weight:500;margin:0 0 20px}
-.packaging-copy h2 em{color:var(--gold);font-style:italic}
-.packaging-copy p{color:var(--muted);font-size:16px;line-height:1.8;max-width:560px}
-.packaging-swatches{display:flex;flex-wrap:wrap;gap:16px;margin-top:28px}
-.packaging-swatches span{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.08em}
-.packaging-swatches i{display:block;width:22px;height:22px;border-radius:50%;border:1px solid rgba(23,61,50,.14)}
-.bag-art{background:rgba(255,253,248,.65);border:1px solid #ddd2bc;border-radius:28px;padding:22px;box-shadow:0 20px 55px rgba(23,61,50,.06)}
-.bag-art img{display:block;width:100%;height:auto}
-@media(max-width:900px){.category-grid{grid-template-columns:repeat(2,1fr)}.packaging-grid{grid-template-columns:1fr;gap:40px}}
-@media(max-width:650px){.brand img{width:150px;height:60px}.category-grid{grid-template-columns:1fr}.packaging{padding:70px 0}}
-/* Footer sits on forest green, so keep the original warm brand tile there for contrast. */
-.footer-brand img{background:#fdf4e7;padding:5px;border-radius:4px}
+
+/* Samaun homepage direction: refined Himalayan editorial */
+:root{--paper:#fbf7ef;--cream:#f3eadb;--ink:#123f34;--gold:#a46f2f;--muted:#5f6963;--line:#dfd4c2}
+body{background:var(--paper);color:var(--ink)}
+header{background:rgba(251,247,239,.97);border-bottom:1px solid #e6dccb;position:sticky;top:0;z-index:20}
+.nav{height:94px}.brand img{width:210px;height:78px;object-fit:contain;object-position:left center;background:transparent;padding:0}
+.nav nav{gap:38px}.nav nav button{font-size:14px;color:#123f34}.nav nav button:hover{color:var(--gold)}
+.cartbtn{border:1px solid #234f44;border-radius:999px;padding:10px 15px;background:transparent;color:var(--ink)}
+.cartbtn b{background:var(--ink);color:white;border-radius:50%;min-width:30px;height:30px;display:inline-grid;place-items:center;margin-left:7px}
+.hero{padding:0;background:linear-gradient(110deg,#fbf7ef 0%,#f8f1e5 54%,#eee5d6 100%);overflow:hidden}
+.hero-inner{min-height:520px;grid-template-columns:.9fr 1.1fr;gap:10px}.hero-copy{padding:82px 0 42px;max-width:590px}
+.eyebrow{color:#a46f2f;letter-spacing:.24em;font-size:11px;font-weight:700}.hero h1{font-size:clamp(56px,6.1vw,86px);line-height:.98;letter-spacing:-.05em;margin:14px 0 24px;color:#123f34}.hero h1 em{color:#a46f2f}.hero p{font-size:17px;line-height:1.7;max-width:590px;color:#58635d}.hero-actions{margin-top:28px}.primary{background:#124b3d;color:#fff;border:0;border-radius:999px;padding:14px 23px;font-weight:600}.primary:hover{background:#0d3d31}.hero-note{margin-top:25px;color:#6c746e;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+.mountain-scene{min-height:520px;display:flex;align-items:center;justify-content:flex-end;padding:30px 0 0}.hero-image-frame{width:100%;max-width:720px;border:0;background:transparent;border-radius:0;box-shadow:none;overflow:visible}.hero-image-frame:after{display:none}.hero-landscape{width:100%;height:auto;display:block;mix-blend-mode:multiply;filter:none}
+.values{padding:18px 0 26px;border-top:1px solid rgba(164,111,47,.22);display:grid;grid-template-columns:repeat(4,1fr);gap:0}.values>div{border-right:1px solid var(--line);padding:0 24px;display:flex;align-items:center;gap:12px}.values>div:first-child{padding-left:0}.values>div:last-child{border-right:0}.value-icon{width:38px;height:38px;border:1px solid #cbb895;border-radius:50%;display:grid;place-items:center;color:#a46f2f;font-size:19px;flex:0 0 auto}.values b{font-size:13px;display:block}.values small{display:block;color:#7a817c;font-size:10px;margin-top:3px}
+.home-intro{display:none}
+.categories{padding:22px 0 34px;background:#fffdf8}.category-strip{display:grid;grid-template-columns:repeat(6,1fr);gap:18px;align-items:start}.category-tile{background:transparent;border:0;padding:0;display:flex;flex-direction:column;align-items:center;gap:8px;color:var(--ink)}.category-tile>span{width:66px;height:66px;border-radius:50%;display:grid;place-items:center;background:#f4eadb;border:1px solid #eadbc2;color:#8a5e2a;font-size:26px}.category-tile:first-child>span{background:#124b3d;color:#fff;border-color:#124b3d}.category-tile b{font-size:12px;font-weight:500;white-space:nowrap}.category-tile small{display:none}
+.featured{padding:62px 0 100px;background:#fffdf8}.sectionhead{margin-bottom:25px}.sectionhead h2{font-size:42px;color:#123f34}.sectionhead h2 em{color:#a46f2f}.textlink{color:#8f5f27}.grid{gap:20px}.card{border:1px solid #e4dac9;border-radius:18px;box-shadow:0 12px 35px rgba(18,63,52,.05);overflow:hidden;background:#fff}.photo{height:260px;background:#eef0e8;position:relative}.photo img{width:100%;height:100%;object-fit:contain;padding:10px}.badge{top:12px;left:12px;border:0;box-shadow:0 3px 12px rgba(0,0,0,.06)}.cardbody{padding:18px 18px 20px}.cardbody h3{font-size:21px;line-height:1.18}.price{color:#123f34}.add{border-radius:999px;background:#124b3d;color:#fff;padding:10px 15px}
+.why{padding:95px 0;background:#eee7db}.why h2{color:#123f34}.footer-brand img{background:transparent;padding:0}
+@media(max-width:900px){.hero-inner{grid-template-columns:1fr}.hero-copy{padding:55px 0 15px}.mountain-scene{min-height:350px;padding:0}.values{grid-template-columns:repeat(2,1fr);gap:18px}.values>div{border-right:0}.category-strip{grid-template-columns:repeat(3,1fr);row-gap:22px}}
+@media(max-width:650px){.nav{height:76px}.brand img{width:150px;height:60px}.hero h1{font-size:51px}.hero-copy{padding:40px 0 15px}.hero p{font-size:15px}.mountain-scene{min-height:280px}.values{grid-template-columns:1fr}.values>div{padding:10px 0;border-bottom:1px solid var(--line)}.values>div:last-child{border-bottom:0}.category-strip{grid-template-columns:repeat(2,1fr)}.featured{padding:55px 0 80px}.sectionhead h2{font-size:36px}.photo{height:240px}}

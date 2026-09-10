@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620">
+<defs>
+ <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8f3e8"/><stop offset="1" stop-color="#e8e1d3"/></linearGradient>
+ <linearGradient id="mount" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#91a59a"/><stop offset="1" stop-color="#526e61"/></linearGradient>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#173d32" flood-opacity=".14"/></filter>
+</defs>
+<rect width="900" height="620" rx="28" fill="url(#sky)"/>
+<circle cx="690" cy="130" r="75" fill="#d8b879" opacity=".48"/>
+<path d="M0 370 L170 220 300 350 470 155 650 360 770 235 900 350 V620 H0Z" fill="#b8c1b8" opacity=".55"/>
+<path d="M0 425 L180 265 330 390 500 190 680 390 810 285 900 360 V620 H0Z" fill="url(#mount)" opacity=".86"/>
+<path d="M0 470 Q430 415 900 455 V620 H0Z" fill="#d8cfbd"/>
+<ellipse cx="500" cy="520" rx="300" ry="38" fill="#7b6b54" opacity=".18"/>
+<!-- honey jar -->
+<g filter="url(#shadow)">
+ <rect x="315" y="290" width="175" height="205" rx="28" fill="#b36b27"/>
+ <rect x="332" y="305" width="141" height="176" rx="18" fill="#d89038" opacity=".7"/>
+ <rect x="302" y="267" width="200" height="45" rx="13" fill="#8d713f"/>
+ <rect x="316" y="258" width="172" height="30" rx="10" fill="#c2a15e"/>
+ <rect x="332" y="357" width="141" height="82" rx="7" fill="#f6efe1"/>
+ <text x="402" y="385" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#173d32">HIMALAYAN</text>
+ <text x="402" y="408" text-anchor="middle" font-family="Georgia,serif" font-size="24" fill="#173d32">HONEY</text>
+ <path d="M365 421 Q402 391 439 421" fill="none" stroke="#a77a39" stroke-width="2"/>
+</g>
+<!-- rajma bowl -->
+<g filter="url(#shadow)">
+ <ellipse cx="560" cy="485" rx="122" ry="38" fill="#8b5a3b"/>
+ <path d="M442 460 Q560 515 678 460 L650 525 Q560 565 470 525Z" fill="#9c6948"/>
+ <ellipse cx="560" cy="460" rx="118" ry="43" fill="#6f4634"/>
+ <g fill="#7d2f2b"><ellipse cx="505" cy="448" rx="22" ry="14"/><ellipse cx="542" cy="436" rx="21" ry="14"/><ellipse cx="580" cy="448" rx="23" ry="14"/><ellipse cx="620" cy="438" rx="20" ry="13"/><ellipse cx="530" cy="461" rx="20" ry="13"/><ellipse cx="600" cy="463" rx="22" ry="13"/></g>
+</g>
+<!-- timur jar -->
+<g filter="url(#shadow)">
+ <rect x="635" y="335" width="145" height="160" rx="22" fill="#3d3328"/>
+ <rect x="648" y="350" width="119" height="130" rx="15" fill="#66533d"/>
+ <rect x="625" y="312" width="165" height="42" rx="12" fill="#8e713f"/>
+ <rect x="639" y="305" width="137" height="28" rx="9" fill="#c2a15e"/>
+ <rect x="648" y="383" width="119" height="65" rx="6" fill="#f6efe1"/>
+ <text x="708" y="408" text-anchor="middle" font-family="Georgia,serif" font-size="16" fill="#173d32">TIMUR</text>
+ <text x="708" y="430" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#6b513c" letter-spacing="2">HIMALAYAN PEPPER</text>
+ <g fill="#2e271e"><circle cx="675" cy="467" r="7"/><circle cx="700" cy="458" r="6"/><circle cx="725" cy="470" r="7"/><circle cx="747" cy="461" r="6"/></g>
+</g>
+<!-- greenery -->
+<g fill="none" stroke="#365b45" stroke-width="7" stroke-linecap="round"><path d="M230 505 Q220 390 275 300"/><path d="M270 500 Q300 405 350 335"/></g>
+<g fill="#6c8b62"><ellipse cx="265" cy="360" rx="20" ry="43" transform="rotate(25 265 360)"/><ellipse cx="295" cy="395" rx="19" ry="42" transform="rotate(-35 295 395)"/><ellipse cx="322" cy="350" rx="20" ry="45" transform="rotate(35 322 350)"/><ellipse cx="235" cy="415" rx="18" ry="40" transform="rotate(-28 235 415)"/></g>
+<!-- honey dipper -->
+<g stroke="#a7773d" stroke-width="10" stroke-linecap="round"><path d="M240 530 L390 450"/></g><g fill="#c18b4c"><circle cx="235" cy="533" r="18"/><path d="M219 526 L250 540 M218 535 L249 549" stroke="#8d5c2d" stroke-width="5"/></g>
+</svg>
