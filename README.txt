@@ -1,11 +1,7 @@
-Samaun Admin Combined Patch
-
-This patch combines:
-- Admin session restore on refresh (no login-screen flicker)
-- Existing Admin product edit functionality
-- Delete Product button with confirmation
+Samaun Admin Delete Button UI Fix
 
 Replace only:
-src/main.jsx
+- src/main.jsx
+- src/style.css
 
-Do not replace the backend or change Cloudflare/D1 settings.
+This keeps the existing Edit/Delete/refresh/session functionality and only makes the Delete button compact and visually lighter.
