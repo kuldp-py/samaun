@@ -27,7 +27,7 @@ export async function onRequest(context){
     if(path[0]==='image' && path[1]){ const key=decodeURIComponent(path.slice(1).join('/')); const obj=await env.IMAGES.get(key); if(!obj) return new Response('Not found',{status:404}); const h=new Headers(); obj.writeHttpMetadata(h); h.set('cache-control','public, max-age=31536000, immutable'); return new Response(obj.body,{headers:h}); }
     if(path[0]==='auth' && path[1]==='login' && method==='POST'){
       const body=await request.json(); if(!env.ADMIN_PASSWORD) return json({error:'ADMIN_PASSWORD is not configured'},500,cors); if(body.password!==env.ADMIN_PASSWORD) return json({error:'Invalid password'},401,cors);
-      const exp=Date.now()+86400000; const sig=await sign(String(exp),env.ADMIN_SESSION_SECRET||env.ADMIN_PASSWORD); const token=b64u(`${exp}.${sig}`); return json({ok:true},{headers:{'set-cookie':cookie('samaun_admin',token)}});
+      const exp=Date.now()+86400000; const sig=await sign(String(exp),env.ADMIN_SESSION_SECRET||env.ADMIN_PASSWORD); const token=b64u(`${exp}.${sig}`); return withCors(json({ok:true},200,{'set-cookie':cookie('samaun_admin',token)}));
     }
     if(path[0]==='auth' && path[1]==='logout'){ return json({ok:true},200,{...cors,'set-cookie':cookie('samaun_admin','',0)}); }
     if(path[0]==='auth' && path[1]==='customer' && path[2]==='register' && method==='POST'){
