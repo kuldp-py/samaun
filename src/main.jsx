@@ -33,8 +33,9 @@ function Admin(){
     finally{setLoading(false)}
   };
   useEffect(()=>{
-    if(hasAdminToken()) load().catch(()=>{});
-    else setCheckingSession(false);
+    if(hasAdminToken()){
+      load().catch(()=>{}).finally(()=>setCheckingSession(false));
+    }else setCheckingSession(false);
   },[]);
   const login=async()=>{
     setAdminError('');setLoading(true);
