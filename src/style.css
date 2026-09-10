@@ -154,3 +154,10 @@ header{background:rgba(251,247,239,.97);border-bottom:1px solid #e6dccb;position
   .category-tile>span{width:58px;height:58px;flex-basis:58px;font-size:22px}
   .category-tile b{font-size:11px}
 }
+
+
+/* Final header and impact-story refinement */
+.brand{width:220px;height:72px}
+.brand img{width:220px;height:72px;object-position:left center}
+.impact-grid article .textlink{cursor:pointer}
+@media(max-width:650px){.brand,.brand img{width:170px;height:60px}}
