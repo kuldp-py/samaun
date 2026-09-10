@@ -161,3 +161,7 @@ header{background:rgba(251,247,239,.97);border-bottom:1px solid #e6dccb;position
 .brand img{width:220px;height:72px;object-position:left center}
 .impact-grid article .textlink{cursor:pointer}
 @media(max-width:650px){.brand,.brand img{width:170px;height:60px}}
+
+/* Admin identity in the global header */
+.admin-status{display:inline-flex;align-items:center;gap:7px;color:var(--ink);font-size:13px;font-weight:600;white-space:nowrap;padding:8px 4px}.admin-signout{border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:999px;padding:8px 12px;font:inherit;font-size:12px;cursor:pointer;white-space:nowrap}.admin-signout:hover{background:var(--cream)}.add:disabled{opacity:.62;cursor:not-allowed}
+@media(max-width:800px){.admin-status span{display:none}.admin-signout{padding:7px 10px}.nav-actions{gap:7px}}
