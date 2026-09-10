@@ -251,10 +251,6 @@ header{background:rgba(251,247,239,.97);border-bottom:1px solid #e6dccb;position
 }
 
 /* SAMAUN homepage — premium editorial e-commerce direction */
-.trustbar{background:#124b3d;color:#fff;overflow:hidden}
-.trustbar-inner{min-height:38px;display:flex;align-items:center;justify-content:space-between;gap:24px;font-size:11px;letter-spacing:.01em;white-space:nowrap}
-.trustbar-inner span{display:inline-flex;align-items:center;gap:7px;opacity:.94}
-
 .premium-hero{min-height:0;padding:0;background:#efe7d8;position:relative;color:#fff}
 .premium-hero .hero-media{position:absolute;inset:0;overflow:hidden;background:#1d3e35}
 .premium-hero .hero-media img{width:100%;height:100%;object-fit:cover;object-position:center center;display:block}
@@ -311,9 +307,6 @@ header{background:rgba(251,247,239,.97);border-bottom:1px solid #e6dccb;position
   .hero-side-note{display:none}
 }
 @media(max-width:800px){
-  .trustbar-inner{justify-content:flex-start;overflow-x:auto;scrollbar-width:none;padding-top:8px;padding-bottom:8px}
-  .trustbar-inner::-webkit-scrollbar{display:none}
-  .trustbar-inner span{flex:0 0 auto}
   .premium-hero .hero-content{min-height:530px;padding-top:25px;padding-bottom:20px}
   .premium-hero .hero-copy{padding:45px 0 20px;max-width:590px}
   .premium-hero h1{font-size:clamp(50px,10vw,72px)}
@@ -347,3 +340,14 @@ header{background:rgba(251,247,239,.97);border-bottom:1px solid #e6dccb;position
   .premium-category-grid{grid-template-columns:1fr}
   .category-image{height:190px}
 }
+
+/* Moving announcement bar */
+.trustbar{position:relative;z-index:30;overflow:hidden;background:var(--ink);color:#f7f1e5;border-bottom:1px solid rgba(217,191,145,.18);white-space:nowrap}
+.trustbar-track{display:flex;width:max-content;min-width:100%;animation:samaun-marquee 28s linear infinite;will-change:transform}
+.trustbar-group{display:flex;align-items:center;flex-shrink:0}
+.trustbar-group span{display:inline-flex;align-items:center;gap:9px;padding:9px 34px;font-size:11px;letter-spacing:.03em;color:#f3ecdf}
+.trustbar-group span+span{border-left:1px solid rgba(217,191,145,.28)}
+.trustbar:hover .trustbar-track{animation-play-state:paused}
+@keyframes samaun-marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.trustbar-track{animation:none}.trustbar-group:nth-child(2){display:none}}
+@media(max-width:650px){.trustbar-group span{padding:8px 22px;font-size:10px}}

@@ -22,7 +22,7 @@ function Header({cart,setView,user,isAdmin,onAdminSignOut,onCustomerSignOut}){
   },[profileOpen,mobileOpen]);
   const go=view=>{close();setView(view)};
   return <header>
-    <div className="trustbar"><div className="trustbar-inner wrap"><span>✦ Free shipping on orders over ₹999</span><span>◌ Authentic Himalayan products</span><span>⌁ Thoughtfully sourced from Uttarakhand</span><span>♡ Made to be shared</span></div></div>
+    <div className="trustbar" aria-label="Samaun highlights"><div className="trustbar-track"><div className="trustbar-group"><span>✦ Free shipping on orders over ₹999</span><span>◌ Authentic Himalayan products</span><span>⌁ Thoughtfully sourced from Uttarakhand</span><span>♡ Made to be shared</span></div><div className="trustbar-group" aria-hidden="true"><span>✦ Free shipping on orders over ₹999</span><span>◌ Authentic Himalayan products</span><span>⌁ Thoughtfully sourced from Uttarakhand</span><span>♡ Made to be shared</span></div></div></div>
     <div className="nav wrap">
       <button className="brand" onClick={()=>go('home')} aria-label="Samaun home"><img src="/samaun-logo-transparent.png" alt="Samaun — Authentic Himalayan Living"/></button>
       <nav className="desktop-nav">
