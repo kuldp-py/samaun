@@ -1,9 +1,14 @@
-Samaun Admin Live Status Fix
+Samaun Admin Control Room Navigation Fix
 
-Replace only src/main.jsx in the current project.
+Replace only:
+  src/main.jsx
+  src/style.css
 
-Fixes:
-- Header immediately changes to “Logged as Admin” after successful admin login.
-- Admin sign-out immediately updates the header.
-- Admin session state stays synchronized between /admin and the main store UI.
-- Existing admin refresh/session, edit, delete, and cart restrictions are preserved.
+This patch:
+- Adds "Control room" beside "Logged as Admin" in the header.
+- Keeps the header controls aligned on one line.
+- Clicking "Control room" returns to the admin dashboard.
+- Keeps the existing single admin Sign out button.
+- Does not change backend, D1, authentication secrets, or product data.
+
+Deploy with GitHub Desktop by committing and pushing to main.
