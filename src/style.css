@@ -90,3 +90,27 @@ header{background:rgba(251,247,239,.97);border-bottom:1px solid #e6dccb;position
 /* Final alignment refinements */
 .card .photo{position:relative}.cardbody .muted{min-height:18px}.review-card{height:100%}.impact-grid article{min-height:245px;display:flex;flex-direction:column}.impact-grid article .textlink{margin-top:auto;align-self:flex-start}
 @media(max-width:800px){.impact-grid,.review-grid{grid-template-columns:1fr}.cardbody{min-height:0}.card h3{min-height:0}.card p{min-height:0}}
+
+
+/* Product badge separation: Bestseller/Premium left, stock right */
+.card .photo .product-tag {
+  left: 12px;
+  right: auto;
+  top: 12px;
+  z-index: 3;
+}
+.card .photo .badge {
+  left: auto;
+  right: 12px;
+  top: 12px;
+  z-index: 3;
+  white-space: nowrap;
+}
+@media (max-width: 420px) {
+  .card .photo .product-tag,
+  .card .photo .badge {
+    top: 10px;
+    padding: 6px 8px;
+    font-size: 9px;
+  }
+}
